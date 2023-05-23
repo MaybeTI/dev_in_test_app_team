@@ -22,7 +22,8 @@ class LoginPage(Page):
         try:
             self.click_element(
                 MobileBy.ID,
-                "com.android.permissioncontroller:id/permission_allow_foreground_only_button",
+                ("com.android.permissioncontroller:"
+                 "id/permission_allow_foreground_only_button"),
             )
             return True
         except (NoSuchElementException, TimeoutException):
