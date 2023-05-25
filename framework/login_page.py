@@ -1,7 +1,7 @@
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
-from .page import Page
+from page import Page
 
 
 class LoginPage(Page):
